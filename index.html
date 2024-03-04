@@ -1,58 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+    <!--
+    1.  inline style
+    => just put style in the attribute itself in the tag
+    <label style ="color:red">
+2.   internal style 
+     => put style in the head tag
+     <style>
+        table {
+            color:red;
+        }
+    </style>
+ 3.    external style 
+      => put style in the extrnal file 
+      <link rel="stylesheet" href="index.css" />   
+-->
+  </head>
+  <body>
     <form>
-<label>Name</label>
-<input placeholder="sumit yadav" required />
+      <label class="label">Name</label>
+      <input placeholder="sumit yadav" required />
 
-<label>Email</label>
-<input type="email" placeholder="john@john.com" required />
+      <label class="label">Email</label>
+      <input type="email" placeholder="john@john.com" required />
 
-<label>Password</label>
-<input type="password" required />
+      <label class="label">Password</label>
+      <input type="password" required />
 
-<label>date</label>
-<input type="date" required />
+      <label class="label">date</label>
+      <input type="date" required />
 
-<lable>phone</lable>
-<input type="number" required />
+      <lable class="label">phone</lable>
+      <input type="number" required />
 
-<label>Telephone</label>
-<input type="tel" required />
+      <label>Telephone</label>
+      <input type="tel" required />
 
-<label>file</label>
-<input type="file" required />
+      <label>file</label>
+      <input type="file" required />
 
-<hr/>
+      <hr />
 
-<label>Number of cups</label>
-<input type="range" min="0" max="10" required />
-<div>number of cups <span>0</span></div>
+      <label>Number of cups</label>
+      <input type="range" min="0" max="10" required />
+      <div>number of cups <span>0</span></div>
 
-<label>Gender</label>
-<input type="radio" value="male" name="Gender" required /><label>Male</label>
-<input type="radio" value="female" name="Gender" required /><label>Female</label>
+      <label>Gender</label>
+      <input type="radio" value="male" name="Gender" required /><label
+        >Male</label
+      >
+      <input type="radio" value="female" name="Gender" required /><label
+        >Female</label
+      >
 
-<label>preferred drinks</label>
-<input type="checkbox" value="tea" name="drinks" required /><label>tea</label>
-<input type="checkbox" value="coffee" name="drinks" required /><label>coffee</label>
+      <label>preferred drinks</label>
+      <input type="checkbox" value="tea" name="drinks" required /><label
+        >tea</label
+      >
+      <input type="checkbox" value="coffee" name="drinks" required /><label
+        >coffee</label
+      >
 
-<label>College</label>
-<select>
-    <option value=""> Select College</Select></option>
-    <option value="ccrc"> CCRC </option>
-    <option value="global college">Global college </option>
-</select>
+      <label>College</label>
+      <select>
+        <option value="">Select College</option>
+        <option value="ccrc">CCRC</option>
+        <option value="global college">Global college</option>
+      </select>
 
-<textarea></textarea>
+      <textarea></textarea>
 
-<button type="submit">Sign Up </button>
-
+      <button type="submit">Sign Up</button>
     </form>
-</body>
+  </body>
 </html>
